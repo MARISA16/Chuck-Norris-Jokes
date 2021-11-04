@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chuck_image_view_margin">8dp</dimen>
+    <dimen name="chuck_image_view_margin_top">24dp</dimen>
+    <dimen name="chuck_norris_jokes_margin_top">56dp</dimen>
+    <dimen name="chuck_logo_marginLeft">75dp</dimen>
+    <dimen name="chuck_logo_marginEnd">76dp</dimen>
+    <dimen name="chuck_norris_jokes_logo_marginLeft">167dp</dimen>
+    <dimen name="chuck_norris_jokes_logo_marginEnd">168dp</dimen>
+    <dimen name="chuck_logo_marginTop">235dp</dimen>
+    <dimen name="chuck_text_view_marginTop">180dp</dimen>
+    <dimen name="layout_chuck_width">411dp</dimen>
+    <dimen name="layout_chuck_height">731dp</dimen>
+    <dimen name="chuck_logo_width">260dp</dimen>
+    <dimen name="chuck_logo_height">260dp</dimen>
+    <dimen name="textSize">15sp</dimen>
+    <dimen name="textSize_button">19sp</dimen>
+    <dimen name="text_view_pedding">50dp</dimen>
+    <dimen name="text_view_marginEnd">61dp</dimen>
+    <dimen name="text_view_marginTop">48dp</dimen>
+    <dimen name="text_view_marginStart">60dp</dimen>
+    <dimen name="text_view_height">343dp</dimen>
+    <dimen name="text_view_width">290dp</dimen>
+    <dimen name="image_view_height">76dp</dimen>
+    <dimen name="image_view_width">76dp</dimen>
+    <dimen name="text_view_lineSpacing_Extra">7sp</dimen>
+    <dimen name="text_view_button_height">19dp</dimen>
+    <dimen name="text_view_button_width">126dp</dimen>
+    <dimen name="text_view_button_marginLeft">143dp</dimen>
+    <dimen name="text_view_button_marginTop">563dp</dimen>
+    <dimen name="button_width">154dp</dimen>
+    <dimen name="button_height">72dp</dimen>
+    <dimen name="button_marginTop">42dp</dimen>
+    <dimen name="button_paddinStart">15dp</dimen>
+    <dimen name="button_paddingTop">13dp</dimen>
+    <dimen name="button_marginStart">143dp</dimen>
+    <dimen name="button_marginEnd">142dp</dimen>
+
+</resources>

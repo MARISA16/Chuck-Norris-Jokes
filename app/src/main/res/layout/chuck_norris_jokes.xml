@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    >
+
+    <ImageView
+        android:id="@+id/chuck_pixel_logo"
+        android:layout_width="@dimen/image_view_width"
+        android:layout_height="@dimen/image_view_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/chuck_norris_jokes_logo_marginLeft"
+        android:layout_marginTop="@dimen/chuck_norris_jokes_margin_top"
+        android:layout_marginEnd="@dimen/chuck_norris_jokes_logo_marginEnd"
+        android:src="@drawable/chuck_pixel_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chuck_norri"
+        android:layout_width="@dimen/text_view_width"
+        android:layout_height="@dimen/text_view_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:lineSpacingExtra="@dimen/text_view_lineSpacing_Extra"
+        android:translationY="-3.75sp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/text_view"
+        android:textColor="@color/textColor_text_view"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSize"
+        android:layout_marginStart="@dimen/text_view_marginStart"
+        android:layout_marginTop="@dimen/text_view_marginTop"
+        android:layout_marginEnd="@dimen/text_view_marginEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="@dimen/text_view_pedding"
+        android:paddingTop="@dimen/text_view_pedding"
+        android:fontFamily="@font/pixelmix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chuck_pixel_logo" />
+
+    <ImageButton
+        android:id="@+id/botao"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/button_marginTop"
+        android:layout_marginStart="@dimen/button_marginStart"
+        android:layout_marginEnd="@dimen/button_marginEnd"
+        android:paddingStart="@dimen/button_paddinStart"
+        android:paddingTop="@dimen/button_paddingTop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/botao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chuck_norri" />
+
+    <TextView
+        android:id="@+id/new_joke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_joke"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/pixelmix"
+        android:textSize="@dimen/textSize_button"
+        app:layout_constraintBottom_toBottomOf="@+id/botao"
+        app:layout_constraintEnd_toEndOf="@+id/botao"
+        app:layout_constraintStart_toStartOf="@+id/botao"
+        app:layout_constraintTop_toTopOf="@+id/botao" />
+</androidx.constraintlayout.widget.ConstraintLayout>
