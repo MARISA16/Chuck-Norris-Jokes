@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".ChuckNorrisJokes"
     android:background="@drawable/bg2"
     >
 
@@ -45,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/chuck_pixel_logo" />
 
     <ImageButton
-        android:id="@+id/botao"
+        android:id="@+id/button"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:layout_marginTop="@dimen/button_marginTop"
@@ -68,8 +69,12 @@
         android:textColor="@color/textColor"
         android:fontFamily="@font/pixelmix"
         android:textSize="@dimen/textSize_button"
-        app:layout_constraintBottom_toBottomOf="@+id/botao"
-        app:layout_constraintEnd_toEndOf="@+id/botao"
-        app:layout_constraintStart_toStartOf="@+id/botao"
-        app:layout_constraintTop_toTopOf="@+id/botao" />
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
