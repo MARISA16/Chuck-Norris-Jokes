@@ -19,6 +19,7 @@ class ActivityChuckNorrisJokes : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chuck_norris_jokes)
+
         binding = ActivityChuckNorrisJokesBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
