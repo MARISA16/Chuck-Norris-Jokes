@@ -3,7 +3,6 @@ package com.marisa.chucknorrisjokes
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.marisa.chucknorrisjokes.databinding.ActivityChuckNorrisJokesBinding
 import com.marisa.chucknorrisjokes.databinding.SplashActivityBinding
 
 class SplashActivity : AppCompatActivity() {
