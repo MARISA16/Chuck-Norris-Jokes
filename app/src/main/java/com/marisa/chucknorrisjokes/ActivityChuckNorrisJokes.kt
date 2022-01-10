@@ -1,13 +1,10 @@
 package com.marisa.chucknorrisjokes
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
-
+import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.fragment.NavHostFragment
 import com.marisa.chucknorrisjokes.databinding.ActivityChuckNorrisJokesBinding
-
 
 class ActivityChuckNorrisJokes : AppCompatActivity() {
 
@@ -18,27 +15,32 @@ class ActivityChuckNorrisJokes : AppCompatActivity() {
         binding = ActivityChuckNorrisJokesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//     var splashFragmentTeste = SplashFragment()
-//
-//      splashFragmentTeste.startActivity( Intent(this,ChuckNorrisJokesFragment::class.java)
-//finish()
-        tostartFragment()
-
-
-    }
-    private fun tostartFragment() {
-        val navigation = supportFragmentManager.findFragmentById(binding.fragmentContainerView.id) as NavHostFragment
-        navigation.navController.setGraph(R.navigation.chuck_norris_nav_graph)
+        startSplashFragment()
     }
 
-     private fun inint(context: Context) {
-        val intent = ActivityChuckNorrisJokes.getIntent(context)
-        context.startActivity(intent)
+    private fun startSplashFragment() {
+        val splashFragment: SplashFragment = SplashFragment()
+        supportFragmentManager
+            .beginTransaction()
+            .replace(
+                R.id.fragmentContainer,
+                splashFragment
+            )
+            .commit()
+
+        Handler(Looper.getMainLooper()).postDelayed({
+            startMainFragment()
+        }, 3000)
     }
-    companion object {
-        fun getIntent(context: Context) = Intent(
-            context, ActivityChuckNorrisJokes::class.java
-        )
+
+    private fun startMainFragment() {
+        val jokeFragment: ChuckNorrisJokesFragment = ChuckNorrisJokesFragment()
+        supportFragmentManager
+            .beginTransaction()
+            .replace(
+                R.id.fragmentContainer,
+                jokeFragment
+            )
+            .commit()
     }
 }
-

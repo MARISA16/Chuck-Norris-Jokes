@@ -19,15 +19,18 @@ class ChuckNorrisJokesFragment : Fragment() {
 
     private val repository = Repository()
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
 
         binding = FragmentChuckNorrisJokesBinding.inflate(layoutInflater)
         return (binding.root)
+    }
 
-        }
-         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-            super.onViewCreated(view, savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         binding.button.setOnClickListener {
             click()
