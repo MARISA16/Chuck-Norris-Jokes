@@ -21,12 +21,6 @@ class SplashFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        val intent = Intent(this@SplashFragment,ChuckNorrisJokesFragment::class.java)
-//        startActivity(intent)
-//        startActivity(
-//            Intent(this@SplashFragment,ChuckNorrisJokesFragment::class.java)
-//        )
-//        finish()
     }
 
 

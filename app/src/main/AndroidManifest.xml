@@ -15,13 +15,8 @@
         android:theme="@style/Theme.ChuckNorrisJokes">
 
         <activity
-            android:name=".ChuckNorrisJokesFragment"
-            android:exported="true"
-            tools:ignore="Instantiatable" />
-        <activity
-            android:name=".SplashFragment"
-            android:exported="true"
-            tools:ignore="Instantiatable">
+            android:name=".ActivityChuckNorrisJokes"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
