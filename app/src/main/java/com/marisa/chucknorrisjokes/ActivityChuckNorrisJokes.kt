@@ -1,19 +1,15 @@
 package com.marisa.chucknorrisjokes
 
-import android.content.Context
-import android.content.Intent
-import android.content.Intent.getIntent
+
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.fragment.NavHostFragment
 import com.marisa.chucknorrisjokes.databinding.ActivityChuckNorrisJokesBinding
 
 
-class ActivityChuckNorrisJokes : AppCompatActivity() {
 
+class ActivityChuckNorrisJokes : AppCompatActivity() {
     private lateinit var binding: ActivityChuckNorrisJokesBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
