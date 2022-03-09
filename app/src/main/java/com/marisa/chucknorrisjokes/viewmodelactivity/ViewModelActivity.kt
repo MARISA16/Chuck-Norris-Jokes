@@ -11,7 +11,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 //   a fun é minha  resposta
-class ChuckNorrisJokesViewModel : ViewModel(){
+class ChuckNorrisJokesViewModel(repository: Repository) : ViewModel(){
      private val joke= MutableLiveData<String>()
     val _joke: LiveData<String> =joke
     val repository =Repository()
