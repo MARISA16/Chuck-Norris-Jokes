@@ -57,7 +57,6 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
     def lifecycle_version = "2.5.0-alpha01"
     def arch_version = "2.1.0"
-
 // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 // LiveData
@@ -68,6 +67,13 @@ dependencies {
 
 // alternately - if using Java8, use the following instead of lifecycle-compiler
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    // Koin para Android
+    def koin_version= "3.2.0-beta-1"
+    implementation "io.insert-koin:koin-android:$koin_version"
+    implementation "io.insert-koin:koin-androidx-workmanager:$koin_version"
+    implementation "io.insert-koin:koin-androidx-navigation:$koin_version"
+// Jetpack Compose
+    implementation "io.insert-koin:koin-androidx-compose:$koin_version"
 
 
 
